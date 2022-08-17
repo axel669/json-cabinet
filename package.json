@@ -1,0 +1,17 @@
+{
+  "name": "pithos-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy/main": "aws-deploy - dev-deploy lambda:main",
+    "deploy/admin": "aws-deploy - dev-deploy lambda:admin",
+    "deploy/site": "aws-deploy - dev-deploy s3:site"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axel669/aws-deploy": "^0.2.2"
+  }
+}
